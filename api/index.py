@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, render_template
 import markdown
 from xhtml2pdf import pisa
 import io
@@ -17,9 +17,7 @@ style = """<style type="text/css">
 
 @app.route('/')
 def convert_page():
-    with open('index.html') as f:
-        html = f.read()
-    return html
+    return render_template("index.html")
 
 @app.route('/upload',methods=['POST','GET'])
 def upload():
