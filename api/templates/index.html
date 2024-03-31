@@ -1,11 +1,37 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>File Upload</title>
+  <title>Markdown to PDF</title>
+  <link rel="shortcut icon" href="https://chuishen.xyz/assets/favicon.ico" />
+  <link rel="bookmark" href="https://chuishen.xyz/assets/favicon.ico" type="image/x-icon"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.bootcdn.net/ajax/libs/bulma/0.9.4/css/bulma.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" value="Submit" />
+    </form> -->
+<div class="columns">
+<div class="card is-centered is-half column">
+  <div class="card-content">
+    <div class="content">
+      Upload a Markdown file by clicking the Upload button, 
+      <br>and we will return a PDF file after you click "Submit".
+      <br>点击 “Upload” 以上传 Markdown 文件, 
+      <br>我们会在你点击 “Submit” 后返回一个PDF文件。
     <form action="/upload" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file"  />
-        <input type="submit" value="提交" />
+      <div class="columns">
+        <div class="column is-three-quarters">
+            <input class="button" type="file" name="resume" />
+        </div>
+        <div class="column is-one-quarter"><button class="button" type="submit">Submit</button></div>
+      </div>
     </form>
+  </div>
+</div>
+<div class="is-centered is-half column"></div>
+</div>
+</div>
 </body>
 </html>
