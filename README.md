@@ -9,6 +9,11 @@ https://md2pdf.chuishen.xyz/
 ## How it Works
 - This example uses the Web Server Gateway Interface (WSGI) with Flask to enable conversion of Markdown to PDF on Vercel with Serverless Functions. 
 
+## Request Example
+- HTTP Method: POST
+- URL: https://md2pdf.chuishen.xyz/
+- Content-Type: multipart/form-data
+
 ## Running Locally
 
 ```bash
