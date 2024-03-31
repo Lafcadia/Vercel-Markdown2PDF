@@ -17,6 +17,7 @@ def convert_page():
 
 @app.route('/upload',methods=['POST','GET'])
 def upload():
+    print(request.args)
     fila = io.BytesIO()
     f = request.files['file'].read()
     fp = str(f, encoding="utf-8")

@@ -21,12 +21,8 @@
       <br>点击 “Upload” 以上传 Markdown 文件, 
       <br>我们会在你点击 “Submit” 后返回一个PDF文件。
     <form action="/upload" method="POST" enctype="multipart/form-data">
-      <div class="columns">
-        <div class="column is-three-quarters">
-            <input class="button" type="file" name="resume" />
-        </div>
-        <div class="column is-one-quarter"><button class="button" type="submit">Submit</button></div>
-      </div>
+      <input class="button" type="file" name="file" />
+      <input class="button" type="submit" />
     </form>
   </div>
 </div>
