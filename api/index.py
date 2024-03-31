@@ -8,11 +8,7 @@ from xhtml2pdf.files import pisaFileObject
 app = Flask(__name__)
 a = os.getcwd()
 style = """<style type="text/css">
-    @font-face {
-        font-family: "Deng";
-        src: url('static/fonts/Deng.ttf');
-    }
-    p {font-family: Deng; word-wrap: break-word; word-break: normal; white-space: pre-wrap; -pdf-word-wrap: CJK;}
+    p {font-family: STSong-Light, Times New Roman; word-wrap: break-word; word-break: normal; white-space: pre-wrap; -pdf-word-wrap: CJK;}
     </style>"""
 
 @app.route('/')
