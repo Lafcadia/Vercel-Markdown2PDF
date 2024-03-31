@@ -30,7 +30,7 @@ def upload():
     pisa_stats = pisa.CreatePDF(html, dest=fila, encoding='utf-8')
     # print(fila.getvalue())
     # print(pisa_stats.err)
-    pisa.showLogging()
+    # pisa.showLogging()
     # with open("a.html","wt", encoding="utf-8") as g:
     #     g.write(html)
     # with open("a.pdf","wb") as g:
